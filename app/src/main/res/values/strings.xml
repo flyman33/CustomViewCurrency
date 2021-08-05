@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CustomViewCurrency</string>
+    <string name="dollar_currency">$</string>
+</resources>

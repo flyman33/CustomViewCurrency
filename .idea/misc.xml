@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Projects/CustomViewCurrency/app/src/main/res/drawable-v24/button_enabled_shape.xml" value="0.2703125" />
+        <entry key="..\:/Android/Projects/CustomViewCurrency/app/src/main/res/drawable-v24/currency_enabled_shape.xml" value="0.2703125" />
+        <entry key="..\:/Android/Projects/CustomViewCurrency/app/src/main/res/drawable-v24/currency_shape.xml" value="0.2703125" />
+        <entry key="..\:/Android/Projects/CustomViewCurrency/app/src/main/res/drawable-v24/currency_view_disabled_shape.xml" value="0.2703125" />
+        <entry key="..\:/Android/Projects/CustomViewCurrency/app/src/main/res/drawable/currency_shape_error.xml" value="0.2703125" />
+        <entry key="..\:/Android/Projects/CustomViewCurrency/app/src/main/res/layout/activity_main.xml" value="0.24230072463768115" />
+        <entry key="..\:/Android/Projects/CustomViewCurrency/app/src/main/res/layout/custom_currency_view.xml" value="0.8" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CurrencyEditText">
+        <attr name="sign" format="string"/>
+        <attr name="limit_number" format="integer"/>
+        <attr name="state" format="enum">
+            <enum name="disabled" value="0" />
+            <enum name="enabled" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
