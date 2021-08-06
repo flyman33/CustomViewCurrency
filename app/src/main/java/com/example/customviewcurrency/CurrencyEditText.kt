@@ -18,19 +18,6 @@ class CurrencyEditText @JvmOverloads constructor(
     private var binding: CustomCurrencyViewBinding =
         CustomCurrencyViewBinding.inflate(LayoutInflater.from(context), this)
 
-    private var state: CurrencyEditTextState = CurrencyEditTextState.ENABLED
-        set(value) {
-            field = value
-            isEnabled = when (field) {
-                CurrencyEditTextState.ENABLED -> {
-                    true
-                }
-                CurrencyEditTextState.DISABLED -> {
-                    false
-                }
-            }
-        }
-
     private var signCurrency: String = ""
         set(value) {
             field = value
@@ -74,7 +61,7 @@ class CurrencyEditText @JvmOverloads constructor(
         context.withStyledAttributes(attrs, R.styleable.CurrencyEditText, defStyleAttr, 0) {
             signCurrency = getString(R.styleable.CurrencyEditText_sign).toString()
             limitNumber = getInt(R.styleable.CurrencyEditText_limit_number, 0)
-            state = CurrencyEditTextState.values()[getInt(R.styleable.CurrencyEditText_state, 0)]
+            isEnabled = getBoolean(R.styleable.CurrencyEditText_android_enabled, false)
         }
     }
 

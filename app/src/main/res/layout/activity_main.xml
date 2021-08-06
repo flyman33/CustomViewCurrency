@@ -14,7 +14,7 @@
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       app:state="disabled"
-       app:sign="@string/dollar_currency" />
+       app:sign="@string/dollar_currency"
+       android:enabled="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
