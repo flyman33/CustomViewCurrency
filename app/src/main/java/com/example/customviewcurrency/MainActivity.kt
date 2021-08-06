@@ -13,5 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         custom = findViewById(R.id.currency_edit)
         custom.setLimit(10000)
+
+        custom.isEnabled = true
     }
 }

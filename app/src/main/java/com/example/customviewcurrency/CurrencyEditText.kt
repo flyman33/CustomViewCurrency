@@ -21,18 +21,12 @@ class CurrencyEditText @JvmOverloads constructor(
     private var state: CurrencyEditTextState = CurrencyEditTextState.ENABLED
         set(value) {
             field = value
-            when (field) {
+            isEnabled = when (field) {
                 CurrencyEditTextState.ENABLED -> {
-                    binding.currencyEditText.isEnabled = true
-                    isEnabled = true
-                    setBackgroundResource(R.drawable.currency_shape)
-                    alpha = 1F
+                    true
                 }
                 CurrencyEditTextState.DISABLED -> {
-                    binding.currencyEditText.isEnabled = false
-                    isEnabled = false
-                    setBackgroundResource(R.drawable.currency_shape)
-                    alpha = 0.5F
+                    false
                 }
             }
         }
@@ -44,9 +38,6 @@ class CurrencyEditText @JvmOverloads constructor(
         }
 
     private var limitNumber: Int = 0
-        set(value) {
-            field = value
-        }
 
     init {
         loadAttr(attrs, defStyleAttr)
@@ -93,5 +84,20 @@ class CurrencyEditText @JvmOverloads constructor(
 
     fun changeSignCurrency(sign: String) {
         signCurrency = sign
+    }
+
+    override fun setEnabled(enabled: Boolean) {
+        super.setEnabled(enabled)
+
+       if(enabled) {
+            binding.currencyEditText.isEnabled = true
+            setBackgroundResource(R.drawable.currency_shape)
+            alpha = 1F
+        }
+        else {
+           binding.currencyEditText.isEnabled = false
+           setBackgroundResource(R.drawable.currency_shape)
+           alpha = 0.5F
+       }
     }
 }
